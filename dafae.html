@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>خدمة الدفع - AI bdarija</title>
-<style>body{background:#000;color:#fff;font-family:sans-serif;padding:20px;max-width:400px;margin:auto} .card{background:#fff;color:#000;padding:20px;border-radius:16px;margin:15px 0} .card2{background:#facc15;color:#000;padding:20px;border-radius:16px;margin:15px 0;border:4px solid #fde047} .btn{display:block;background:#000;color:#fff;text-align:center;padding:12px;border-radius:12px;text-decoration:none;margin-top:12px;font-weight:bold} .btn2{background:#fff;color:#000} </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدفع - 49 درهم</title>
 </head>
-<body>
-<h1 style="text-align:center">🚀 ندفع لك الخدمة وانت فدارك!</h1>
-<p style="text-align:center;color:#999">ما تبقاش تضيع وقتك فالسيبير</p>
+<body style="font-family:Arial; background:#f5f5f5; padding:20px;">
 
-<div style="background:#18181b;padding:15px;border-radius:12px;margin:20px 0">
-<b>كيفاش خدامة؟</b><br>
-1. كتصيفط ليا CV ديالك<br>2. كتخلص الباك<br>3. أنا كل نهار كندفع ليك وكنصيفط لك الدليل
+<div style="max-width:500px; margin:auto; background:white; padding:20px; border-radius:15px;">
+
+<h1 style="text-align:center;">🚀 خدمة الدفع في 9 مواقع</h1>
+<p style="text-align:center;">كن دفعو لك السيفي ديالك كل نهار فـ Anapec, Indeed, Emploi.ma...</p>
+
+<!-- صندوق الدفع الجديد بسميتك -->
+<div style="background:#FFF9C4; border:2px dashed #FBC02D; padding:20px; border-radius:15px; text-align:center; margin:20px 0;">
+  <h2>💳 خلص 49 درهم عبر كاش بلوس</h2>
+  <div style="background:white; padding:15px; border-radius:10px; text-align:right;">
+    <p><b>👤 الإسم:</b> Hamza Dahyaoui</p>
+    <p><b>📱 رقم كاش بلوس:</b> 0723300523</p>
+    <p><b>💰 المبلغ:</b> 49 درهم</p>
+  </div>
+  <p style="color:red; font-weight:bold; margin-top:15px;">صور الوصل وطلعو هنا:</p>
+  <input type="file" id="receipt" accept="image/*" style="margin:10px 0; padding:10px; border:1px solid #ccc; border-radius:8px; width:90%;">
+  <input type="tel" id="client_whatsapp" placeholder="رقم واتساب ديالك" style="margin:10px 0; padding:12px; border:1px solid #ccc; border-radius:8px; width:90%; text-align:center;">
+  <button onclick="confirmPayment()" style="background:#25D366; color:white; border:none; padding:15px; border-radius:10px; font-size:18px; font-weight:bold; width:100%; cursor:pointer;">
+    ✅ تأكيد الدفع وبدء الخدمة
+  </button>
+  <p id="msg" style="margin-top:15px;"></p>
 </div>
 
-<div class="card">
-<b>باك البداية - 49 درهم</b><h2>10 دفعات</h2><small>صالح 15 يوم</small>
-<a class="btn" href="https://wa.me/212723300523?text=بغيت باك 49 درهم">بغيت هاد الباك - 49dh</a>
 </div>
 
-<div class="card2">
-<b>🔥 الأكثر طلبا</b><br><b>باك الخدمة - 99 درهم</b><h2>30 دفعة</h2><small>شهر كامل + CV فابور</small>
-<a class="btn" href="https://wa.me/212723300523?text=بغيت باك 99 درهم">بغيت هاد الباك - 99dh</a>
-</div>
+<script>
+function confirmPayment(){
+  const receipt = document.getElementById('receipt').files[0];
+  const whatsapp = document.getElementById('client_whatsapp').value;
+  if(!receipt ||!whatsapp){
+    alert('عافاك صور الوصل ودير رقم واتساب');
+    return;
+  }
+  const message = `سلام حمزة! خلصت 49 درهم كاش بلوس على 0723300523. رقمي هو ${whatsapp}`;
+  window.open(`https://wa.me/212723300523?text=${encodeURIComponent(message)}`, '_blank');
+  document.getElementById('msg').innerHTML = "✅ تم! تواصل معك حمزة دابا";
+}
+</script>
 
-<div style="background:#18181b;padding:15px;border-radius:12px">
-<b>باك VIP - 199 درهم</b><h2>دفعات بلا حدود</h2>
-<a class="btn btn2" href="https://wa.me/212723300523?text=بغيت VIP 199">بغيت VIP - 199dh</a>
-</div>
-
-<p style="text-align:center;color:#666;font-size:12px;margin-top:20px">الخلاص كاش بلوس: 07xxxxxx</p>
 </body>
 </html>
-<div style="background:#facc15;color:#000;text-align:center;padding:12px;font-weight:bold">🔥 جديد: <a href="dafae.html" style="color:#000;text-decoration:underline">ندفع لك الخدمة وانت فدارك - اضغط هنا</a></div>
-<a href="dafae.html" style="display:block;background:yellow;color:#000;padding:15px;text-align:center;font-weight:bold;text-decoration:none;">🚀 جديد: ندفع لك السيفي وانت فدارك - 49dh فقط! اضغط هنا</a>
-<div style="background:#facc15;color:#000;padding:10px 12px;border-radius:10px;text-align:center;font-weight:bold;margin-bottom:15px;font-size:14px">
-⚠️ السيفي ديالك باقي خايب؟ <a href="index.html" style="color:#000;text-decoration:underline">قادو هو الأول هنا بـ 29 درهم وحول AI</a> ثم رجع لهنا
-</div>
